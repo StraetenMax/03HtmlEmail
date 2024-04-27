@@ -35,7 +35,50 @@
 			font-family: sans-serif;
 			color: #4a4a4a;
 		}
+		.two-columns{
+			font-size: 0;
+			text-align: center;
+			padding:35px 0 40px;
+		}
+		.two-columns .column{
+			width:100%;
+			max-width: 300px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.two-columns .padding{
+			padding:20px;
+		}
+		.two-columns .content{
+			font-size: 15px;
+			text-align:left;
+			line-height: 20px;
+		}
+		.button{
+			background-color: #1e5d7b;
+			color:#ffffff;
+			text-decoration: none;
+			padding: 12px 20px;
+			border-radius: 8px;
+			font-weight: bold;
+			letter-spacing:.5px;
+		}
+		.two-columns .last{
+			padding:0 !important;
+		}
+		a{
+			text-decoration: none;
+			color:#37cbbf;
+		}
 		@media screen and (max-width: 600px) { 
+			.two-columns .padding{
+				padding-right: 0 !important;
+				padding-left: 0 !important;
+			}
+			.two-columns .content img{
+				width: 300px !important;
+				padding: 300px !important;
+			}
 
 		}
 	</style>
@@ -122,7 +165,7 @@
 													<td style="padding:10px">
 														<p style="font-size:17px;font-weight:bold;">Create Custom Designs</p>
 														<p style="padding-bottom:15px;">Responsive HTML EMAIL Templates that you can build around to master email development.</p>
-														<a href="#" class="button">GSet Started</a>
+														<a href="#" class="button">Get Started</a>
 													</td>
 												</tr>
 											</table>
@@ -134,12 +177,48 @@
 					</table>
 				</td>
 			</tr>
-			
 			<!-- EMAIL LOGOS -->
-			
-			
+		<tr>
+			<td style="background-color:#eaf6fb;border-top:2px solid #21c6b8;">
+				<table width="100%">
+					<tr>
+						<td class="two-columns last">
+							<table class="column">
+								<tr>
+									<td>
+										<a href="#"><img src="img/email-1.jpg" alt="Email 1" width="300" style="max-width:300px"></a>
+									</td>
+								</tr>
+							</table>
+							<table class="column">
+								<tr>
+									<td>
+										<a href="#"><img src="img/email-2.jpg" alt="Email 2" width="300" style="max-width:300px"></a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>	
 			<!-- FOOTER SECTION -->
-			
+		<tr>
+			<td style="border-top: 2px solid #21c6b8;background-color:#565656;border-bottom:4px solid #21c6b8;">
+				<table width="100%">
+					<tr>
+						<td style="padding:50px 20px; text-align:center; color:#ffffff">
+							<a href="#"><img src="img/html-email-white.png" alt="logo" width="230px"></a>
+							<p style="padding-top:10px;">w3newbie HTML Email</p>
+							<p>123 Street Road, City, State 55555</p>
+							<p><a href="mailto:email@example.com">email@w3newbie.com</a></p>
+							<p><a href="tel.18008888888">1-800-888-8888</a></p>
+							<p><a style="font-size:13px" href="#">UNSUBSCRIBE</a></p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>			
 			
 		</table>
 	</center>
